@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Aplikasi CRUD dengan PHP</title>
+</head>
+<body>
+	<header>
+		<h2>Aplikasi CRUD</h2>
+		<hr>
+	</header>
+	<h1>Tambah Data Siswa</h1>
+	<form method="post" action="proses_simpan.php" enctype="multipart/form-data">
+	<table cellpadding="8">
+	<tr>
+		<td>Nama</td>
+		<td><input type="text" name="nama"></td>
+	</tr>
+	<tr>
+		<td>NIM</td>
+		<td><input type="text" name="nis"></td>
+	</tr>
+	<tr>
+		<td>Alamat</td>
+		<td><textarea name="alamat"></textarea></td>
+	</tr>
+	<tr>
+		<td>Jurusan</td>
+		<td>
+		<select name="jurusan">
+			<option value="Teknik Elektro">Teknik Elektro</option>
+			<option value="Teknik Industri">Teknik Industri</option>
+			<option value="Teknik Informatika">Teknik Informatika</option>
+		</select>
+		</td>
+	</tr>
+	</table>
+
+	<input type="submit" value="Simpan">
+	<a href="index.php"><input type="button" value="Batal"></a>
+	</form>
+	<hr>
+	<footer>
+		<p>&copy 2022</p>
+	</footer>
+</body>
+</html>
